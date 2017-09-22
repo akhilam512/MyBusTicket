@@ -1,0 +1,77 @@
+//	SIGN UP MODULE DONE @ 12.23 AM ; 22/9/17
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+
+class logdetails
+{
+
+	char fname[21];
+	char lname[21];
+	int age;             //or DOB ?
+	char email[20];
+	char pw[15];
+	char pno[11];
+	public:
+		void signup();
+
+	};
+
+
+void logdetails::signup()
+{
+	clrscr();
+	char pw1[11];
+
+	cout<<"Enter First Name\n";
+	gets(fname);
+
+	cout<<"Enter Last Name\n";
+	gets(lname);
+
+	cout<<"Enter E-Mail ID\n";
+	gets(email);
+	 label1:  cout<<"Enter Password\n";
+	gets(pw);
+
+	if(strlen(pw)<8)
+	{	cout<<"Minimum : 8 character long\n ";
+		goto label1;
+	}
+
+	cout<<"Confirm Password\n";
+	gets(pw1);
+
+	if(strcmpi(pw,pw1)!=0)
+	{
+		cout<<"Pass words do not match\n Enter again\n";
+		goto label1;
+	}
+
+
+	cout<<"Enter Phone Number\n";
+	gets(pno);
+
+	//loading animation goes here
+
+	clrscr();
+
+	cout<<"Sign Up Successful!\n";
+
+}
+
+
+
+void main()
+{
+	logdetails l;
+
+	l.signup();
+
+	getch();
+}
+
+
+

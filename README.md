@@ -1,2 +1,4 @@
 # BUST-TICKETING-SERVICE
-A piece of C++ code which allows users to book tickets for a bus to various locations 
+A bus ticket booking client written in C++ which allows users to register, log in and book bus tickets to various locations. The project makes use of the core concepts of C++, such as Classes and File Handling extensively.   
+
+## This project was made as a part of a hackathon conducted by Tata Consultancy Services for high school students (2017) 
